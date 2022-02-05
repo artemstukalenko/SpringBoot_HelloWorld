@@ -25,7 +25,7 @@ public class HelloWorldControllerTest {
 
     @Test
     public void controllerInvokesService() {
-        controller.showHelloWorld();
+        controller.getHelloWorld();
         verify(service, times(1)).getHelloWorldModel();
     }
 
@@ -35,7 +35,7 @@ public class HelloWorldControllerTest {
 
         when(service.getHelloWorldModel()).thenReturn(modelToReturn);
 
-        final HelloWorldModel foundModel = controller.showHelloWorld();
+        final HelloWorldModel foundModel = controller.getHelloWorld();
 
         assertNotNull(foundModel);
         assertEquals(modelToReturn, foundModel);

@@ -18,7 +18,7 @@ public class HelloWorldController {
     }
 
     @GetMapping("/helloWorld")
-    public HelloWorldModel showHelloWorld() {
+    public HelloWorldModel getHelloWorld() {
         return service.getHelloWorldModel();
     }
 
