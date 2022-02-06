@@ -6,9 +6,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class HelloWorldServiceImpl implements HelloWorldService {
+public final class HelloWorldServiceImpl implements HelloWorldService {
 
-    private HelloWorldModel model;
+    private final HelloWorldModel model;
 
     public HelloWorldServiceImpl(@Autowired HelloWorldModel model) {
         this.model = model;

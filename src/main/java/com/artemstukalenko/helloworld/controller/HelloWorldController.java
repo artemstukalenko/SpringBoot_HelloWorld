@@ -9,9 +9,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/api")
-public class HelloWorldController {
+public final class HelloWorldController {
 
-    private HelloWorldService service;
+    private final HelloWorldService service;
 
     public HelloWorldController(@Autowired HelloWorldService service) {
         this.service = service;

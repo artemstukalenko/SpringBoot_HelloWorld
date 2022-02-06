@@ -3,9 +3,9 @@ package com.artemstukalenko.helloworld.model;
 import org.springframework.stereotype.Component;
 
 @Component
-public class HelloWorldModel {
+public final class HelloWorldModel {
 
-    private String helloWorldString;
+    private final String helloWorldString;
 
     public HelloWorldModel() {
         this.helloWorldString = "Hello World!";
